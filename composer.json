@@ -20,13 +20,12 @@
     ],
     "require": {
         "php": "^7.2",
-        "laravel/framework": "^6.0"
+        "laravel/framework": "^6.*"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.x-dev"
+            "dev-master": "1.x-dev"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "stable"
 }
