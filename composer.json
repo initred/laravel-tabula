@@ -3,6 +3,15 @@
     "description": "laravel-tabula is a tool for liberating data tables trapped inside PDF files for the Laravel framework.",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "laravel",
+        "pdf",
+        "csv",
+        "tsv",
+        "json",
+        "tabula",
+        "table"
+    ],
     "authors": [
         {
             "name": "initred",
@@ -12,5 +21,11 @@
     "require": {
         "php": "^7.2",
         "laravel/framework": "^6.0"
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "minimum-stability": "dev"
 }
