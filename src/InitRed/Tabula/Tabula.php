@@ -1,5 +1,7 @@
 <?php
 
+namespace InitRed\Tabula;
+
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Exception\InvalidArgumentException;
