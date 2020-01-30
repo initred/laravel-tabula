@@ -22,10 +22,5 @@
         "php": "^7.2",
         "laravel/framework": "^6.0"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
-        }
-    },
     "minimum-stability": "dev"
 }
