@@ -125,7 +125,7 @@ class Tabula
         }
 
         $arguments = array_merge(
-            ['java', '-jar', storage_path($this->getJarArchive())],
+            ['java', '-jar', $this->getJarArchive()],
             $parameters
         );
 
