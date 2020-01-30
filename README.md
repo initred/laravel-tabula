@@ -5,7 +5,7 @@ laravel-tabula is a tool for liberating data tables trapped inside PDF files for
 
 
 ```
-<pre><code>composer require initred/laravel-tabula</code></pre>
+composer require initred/laravel-tabula
 ```
 
 ### Configuration Settings (Needed Java)
