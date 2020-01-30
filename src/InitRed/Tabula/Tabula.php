@@ -117,6 +117,8 @@ class Tabula
             $output = Str::replaceLast('/','', $output);
         }
 
+        $parameters = array_merge($parameters, ['-g', '-p', 'all']);
+
         $finder = new ExecutableFinder();
         $binary = $finder->find('java', null, $this->binDir);
 
@@ -125,7 +127,7 @@ class Tabula
         }
 
         $arguments = array_merge(
-            ['java', '-jar', $this->getJarArchive()],
+            ['java', '-Xmx256m', '-Djava.awt.headless=true', '-Dfile.encoding=UTF8', '-jar', $this->getJarArchive()],
             $parameters
         );
 
