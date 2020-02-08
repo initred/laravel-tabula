@@ -13,6 +13,7 @@ composer require initred/laravel-tabula
 [Windows]
 
 http://www.oracle.com/technetwork/java/javase/downloads/index.html.
+Please System Path Adding.
 
 [Mac os]
 
@@ -39,10 +40,18 @@ sudo dnf install java-latest-openjdk
 
 ```
 $tabula = new Tabula('/usr/bin/');
-$tabula->parse(
-  'json',
+
+$tabula->convertInto(
+  storage_path('app/public/pdf/test.pdf'),
+  storage_path('app/public/json/test.csv'),
+  'csv',
+  'all'
+);
+
+$tabula->convertIntoByBatch(
   storage_path('app/public/pdf'),
-  storage_path('app/public/json')
+  'json',
+  'all'
 );
 ```
 
