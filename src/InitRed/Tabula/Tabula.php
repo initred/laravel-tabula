@@ -159,7 +159,7 @@ class Tabula
     }
 
 
-    public function buildJavaOptions()
+    private function buildJavaOptions()
     {
         $javaOptions = ['java'];
 
@@ -239,7 +239,7 @@ class Tabula
     /**
      * @param array $options
      */
-    public function buildOptions(array $options)
+    private function buildOptions(array $options)
     {
         $buildOptions = [];
 
@@ -319,7 +319,7 @@ class Tabula
         $this->options = $buildOptions;
     }
 
-    public function run()
+    private function run()
     {
         $parameters = array_merge($this->javaOptions, $this->options);
 
