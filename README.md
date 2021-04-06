@@ -39,20 +39,19 @@ sudo dnf install java-latest-openjdk
 ### How to use on Laravel (Example)
 
 ```
+$file = storage_path('app/public/pdf/test.pdf')
+
 $tabula = new Tabula('/usr/bin/');
 
-$tabula->convertInto(
-  storage_path('app/public/pdf/test.pdf'),
-  storage_path('app/public/json/test.csv'),
-  'csv',
-  'all'
-);
-
-$tabula->convertIntoByBatch(
-  storage_path('app/public/pdf'),
-  'json',
-  'all'
-);
+$tabula->setPdf($file)
+    ->setOptions([
+        'format' => 'csv',
+        'pages' => 'all',
+        'lattice' => true,
+        'stream' => true,
+        'outfile' => storage_path("app/public/csv/test.csv"),
+    ])
+    ->convert();
 ```
 
 ### License
