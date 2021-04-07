@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "mantey-github",
+      "name": "Daniel Mantey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39991756?v=4",
+      "profile": "https://medium.com/@mantey",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "laravel-tabula",
+  "projectOwner": "initred",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
